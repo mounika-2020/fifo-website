@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<title>Fifo home page </title>
+	<link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="dropdown">
+     <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="logo">FIFOsolutions</a>
+      <ul>
+        <li><a  class="active" href="homepage.html">Home</a></li>
+        <li><a href="aboutuspage.html">About us</a></li>
+        <li><a href="industriespage.html">Industries</a></li>
+        <li><a href="servicespage.html">Services <i class="fa fa-caret-down"></i></a>
+          <ul>
+             <li><a onclick="window.location='trainingpage.html';">Training</a></li>
+             <li><a href="supportpage.html">Support</a></li>
+             <li><a href="jobpage.html">Jobs</a></li>
+          </ul>
+        </li>
+        <li><a href="carrierspage.html">Carriers</a></li>
+        <li><a href="clientspage.html">Clients</a></li> 
+        <li><a href="contactuspage.html">Contact Us</a></li>      
+      </ul> 
+     </nav>
+    </div>  
+     <section id="id1">
+        <div>
+            <h2>TURN YOUR PASSION INTO A<br> CARRIER</h2>
+            <p>FIFOsolutions is rapidly growing software development and consulting<br> company offering a broad range of software expertise and services with <br>a strong customer focus. FIFOsolutions is established with a goal to<br> provide cost-effective solutions to client’s information management need<br> utilizing highly skilled and experienced professional. FIFOsolutions specializes<br> in software development and consulting services. FIFOsolutions clearly<br> understands the client requirements and utilizes its business experience <br>to provide highly skilled consultants to successfully achieve the goals<br> of the project.</P> 
+        </div>
+        <img src="images\dose-media-bU6JyhSI6zo-unsplash.jpg" width="540" height="440" alt="pic" title="image" class="float-img"/>
+     </section>
+     <section id="id2">
+         <h3><span class="span">90%</span>  of the people are well settled here</h3>
+     </section>     
+     <section id="id3">
+        <img src="images\sarah-shaffer-O3gOgPB4sRU-unsplash.jpg" width="540" height="440" alt="pic" title="image"/>
+        <div>
+            <h6>Update</h6>
+            <p> Our colleagues in company along with the encouragement<br> of the Center leadership team have set up various cultural <br>committees that organize several fun@work events. Various<br> community engagement activities have also been spearheaded<br> by the company.</P>  
+            <a href="#">Read</a>
+        </div>
+     </section>     
+     <section id="id4">
+        <div>
+            <h2>MORE POWERFUL THAN<br> MARKET SPEAK</h2>
+            <p> Basic tried-and-true practices are a great place to start. <br>But at TEKsystems, we know you’re not looking to do the same thing as<br> everyone else. Your transformation demands<br> more than a one-size-fits-all solution. So we go deeper. We analyse your<br> industry from the inside out and work with you to own your space within it..</P>   
+        </div>
+     </section>     
+     <section id="id5">
+        <div>
+            <img src="images\john-schnobrich-FlPc9_VocJ4-unsplash.jpg" width="59240" height="540" alt="pic" title="image"/>
+        </div>
+     </section> 
+     <section id="id7">
+       <div>
+         <h1>WHAT WE DO</h1>
+         <br>
+         <br>
+           <div class="side1">
+            <div class="content">
+             <div class="icon">
+               <i class="fa fa-cloud"></i>
+             </div>
+             <h3>Cloud services</h3>
+             <p>Transform your IT<br> infrastructural and boost<br> your operational efficiency</p>
+            </div>
+           </div>
+           <div class="side1">
+            <div class="content">
+             <div class="icon">
+               <i class="fa fa-cloud"></i>
+             </div>
+             <h3>Cloud native services</h3>
+             <p>Modernize your cloud<br> infrastructure</p>
+            </div>
+           </div>
+           <div class="side1">
+            <div class="content">
+             <div class="icon">
+               <i class="fa fa-cloud"></i>
+             </div>
+             <h3>Data platforms and intelligence</h3>
+             <p>Empower decision making<br> with data analytics</p>
+            </div>
+           </div>
+           <div class="side1">
+            <div class="content">
+             <div class="icon">
+               <i class="fa fa-cloud"></i>
+             </div>
+             <h3>Automation and AI</h3>
+             <p>Automate your business<br> processes with artificial<br> intelligence(AI)</p>
+            </div>
+           </div>  
+     </section>            
+     <section id="id6">
+        <div class="container">
+          <div class="content">
+             <div class="icon">
+               <i class="fa fa-users"></i>
+             </div>
+             <div class="counter" data-target="7000">0</div>
+             <h3>Clients</h3>
+          </div>
+          <div class="content">
+             <div class="icon">
+               <i class="fa fa-user-circle"></i>
+             </div>
+             <div class="counter" data-target="2000">0</div>
+             <h3>Employees</h3>
+          </div>
+          <div class="content">
+            <div class="icon">
+              <i class="fa fa-envelope-o"></i>
+           </div>
+           <div class="counter" data-target="1000">0</div>
+           <h3>Number of Mails</h3>
+          </div>
+        </div>
+        <script>
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            counters.forEach(counter => {
+             const updcount = () =>{
+              const target = counter.getAttribute('data-target');
+              const count = +counter.innerText;
+              const score = target / speed;
+              if(count < target) {
+                 counter.innerText = count + score;
+                 setTimeout(updcount, 1);
+              } else {
+                counter.innertext = target;
+             }
+          };
+          updcount();
+         });
+        </script>
+     </section>  
+     <section id="footer">
+        <div>
+             <h2>More information</h2><br>
+             <h5>location</h5><br>
+             <h5>FAQ</h5><br>
+             <h5>Talent services</h5>
+        </div>     
+     </section> 
+     <script type="text/javascript">
+            function toggle() {
+                var header=document.getElementById('header')
+                header.classlist.toggle('active')
+            }   
+     </script>
+ </body>
+ </html>           
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

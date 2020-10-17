@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	  <title>fifo job page </title>
+	  <link rel="stylesheet" href="jobpage.css">
+</head>
+<body>
+   <div class="dropdown">
+     <nav>
+      <a href="#" class="logo">FIFOsolutions</a>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a  href="aboutuspage.html">About us</a></li>
+        <li><a href="industriespage.html">Industries</a></li>
+        <li><a href="servicespage.html">Services <i class="fa fa-caret-down"></i></a>
+          <ul>
+             <li><a onclick="window.location='trainingpage.html';">Training</a></li>
+             <li><a href="supportpage.html">Support</a></li>
+             <li><a class="active" href="jobpage.html">Jobs</a></li>
+          </ul>
+        </li>
+        <li><a href="carrierspage.html">Carriers</a></li>
+        <li><a href="clientspage.html">Clients</a></li> 
+        <li><a href="contactuspage.html">Contact Us</a></li>      
+      </ul> 
+     </nav>
+    </div>  
+      <h1>Jobs</h1>
+     <p class="p1">FIFOSolutions is a experienced end-to-end IT solutions provider based in IT Applications development and IT Consulting services to several Fortune 2000 Clients and Integrators nationwide.
+
+ 
+      FIFOsolutions specializes in software development and consulting services. FIFOsolutions clearly understands the client requirements and utilizes its business experience to provide highly skilled consultants to successfully achieve the goals of the project..</p>
+      <p class="p2">FIFOSolutions is a experienced end-to-end IT solutions provider based in IT Applications development and IT Consulting services to several Fortune 2000 Clients and Integrators nationwide.
+
+ 
+      FIFOsolutions specializes in software development and consulting services. FIFOsolutions clearly understands the client requirements and utilizes its business experience to provide highly skilled consultants to successfully achieve the goals of the project..</p>
+      <p class="p3">FIFOSolutions is a experienced end-to-end IT solutions provider based in IT Applications development and IT Consulting services to several Fortune 2000 Clients and Integrators nationwide.
+
+ 
+      FIFOsolutions specializes in software development and consulting services. FIFOsolutions clearly understands the client requirements and utilizes its business experience to provide highly skilled consultants to successfully achieve the goals of the project..</p>
+   <section id="jobform">
+        
+        <div class="container"><br>
+        <h2>Work For Us</h2><br>  
+           <div class="col-lg-8 m-auto d-block">
+
+                  <form id="registration" action="jobsubmit.html" onsubmit="return validation()">
+                        <div>
+                             
+                              <input type="text" name="userf" required="required" id="userf" placeholder="Firstname" autocomplete="off"><br>
+                              <span id="usernamef" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div>
+                             
+                              <input type="text" name="userl" id="userl"  placeholder="Lastname" autocomplete="off"><br>
+                              <span id="usernamel" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div>
+                              
+                              <input type="email" name="emails" id="emails"  placeholder="Email" autocomplete="off"><br>
+                              <span id="emailids" class="text-danger font-weight-bold"></span>
+                              
+                        </div>
+                        <div>
+                           <select id="num">
+                              <option>+91</option>
+                              <option>+92</option>
+                              <option>+93</option>
+                              <option>+94</option>
+                              <option>+95</option>
+                           </select><input type="text" name="mobile"  id="mobileNumber" placeholder="MobileNumber"  autocomplete="off"><br>
+                           <span id="mobiles" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div>
+                             
+                              <input type="text" name="technology"  id="technology" placeholder="Technology" autocomplete="off"><br>
+                              <span id="tech" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div>
+                             
+                              <input type="file" name="resume"  id="resume" accept=".pdf" placeholder="password" autocomplete="off"><br>
+                              <span id="resumes" class="text-danger font-weight-bold"></span>
+                        </div>
+                        
+                        <input type="submit" name="submit" id="sub" value="submit"  autocomplete="off">
+                  </form>
+            </div>
+      </div>      
+      <script src="jobpage.js"></script>
+   </section>
+   <section id="footer">
+        <div>
+             <h2>More information</h2><br>
+             <h5>location</h5><br>
+             <h5>FAQ</h5><br>
+             <h5>Talent services</h5>
+
+        </div>     
+   </section> 
+ </body>
+ </html>           
+  

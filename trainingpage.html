@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Fifo training page</title>
+	<link rel="stylesheet" href="trainingpage.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="dropdown">
+     <nav>
+      <a href="#" class="logo">FIFOsolutions</a>
+      <ul>
+          <li><a onclick="window.location='homepage.html';">Home</a></li>
+          <li><a onclick="window.location='aboutuspage.html';">About us</a></li>
+          <li><a onclick="window.location='industriespage.html';">Industries</a></li>
+          <li><a class="active" onclick="window.location='servicespage.html';">Services<i class="fa fa-caret-down"></i></a>
+              <ul>
+                <li><a class="active" href="trainingpage.html">Training</a></li>
+                <li><a href="supportpage.html">Support</a></li>
+                <li><a href="jobpage.html">Jobs</a></li>
+              </ul>
+          </li>    
+          <li><a onclick="window.location='carrierspage.html';">Carriers</a></li>
+          <li><a onclick="window.location='clientspage.html';">Clients</a></li>
+          <li><a onclick="window.location='contactuspage.html';">Contact us</a></li>
+     </nav>
+    </div>  
+    <h1>Training</h1>
+    <p class="p1">FIFOSolutions is a experienced end-to-end IT solutions provider based in IT Applications development and IT Consulting services to several Fortune 2000 Clients and Integrators nationwide.
+
+ 
+      FIFOsolutions specializes in software development and consulting services. FIFOsolutions clearly understands the client requirements and utilizes its business experience to provide highly skilled consultants to successfully achieve the goals of the project..</p>
+      <p class="p2">FIFOSolutions is a experienced end-to-end IT solutions provider based in IT Applications development and IT Consulting services to several Fortune 2000 Clients and Integrators nationwide.
+
+ 
+      FIFOsolutions specializes in software development and consulting services. FIFOsolutions clearly understands the client requirements and utilizes its business experience to provide highly skilled consultants to successfully achieve the goals of the project..</p>
+      <p class="p3">FIFOSolutions is a experienced end-to-end IT solutions provider based in IT Applications development and IT Consulting services to several Fortune 2000 Clients and Integrators nationwide.
+
+ 
+      FIFOsolutions specializes in software development and consulting services. FIFOsolutions clearly understands the client requirements and utilizes its business experience to provide highly skilled consultants to successfully achieve the goals of the project..</p>
+      <section id="tform" >
+         <div class="container">
+           <h2>Registration Form</h2>
+           <form class="login_form" id="form" action="trainingsubmit.html" method="post" name="form" onsubmit="return validated()">  
+             <div class="row100">
+              <div class="col">
+                <div class="inputBox">
+                   <input autocomplete="off" type="text" name="fname"  id="fname" required="required" placeholder="First name">
+                   <div id="fname_error">Please enter the first name</div>
+                   <span class="line"></span>
+                   
+                </div>
+              </div>
+              <div class="col">
+                <div class="inputBox">
+                  <input autocomplete="off" type="text" name="lname" id="lname" required="required" placeholder="Last name">
+                  <div id="lname_error">Please enter the last name</div>
+                  <span class="line"></span>
+                </div>
+              </div>  
+             </div>
+             <div class="row100">
+                <div class="col">
+                  <div class="inputBox">
+                     <input autocomplete="off" type="email" name="email" id="email" required="required" placeholder="E-mail">
+                     
+                     <div id="email_error">Please enter email address</div>
+                     <span class="line"></span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="inputBox">
+                    <input autocomplete="off" type="number" name="contact" required="required" placeholder="Phone number*">
+                    <div id="contact_error">Please enter valid phone number</div>
+                    <span class="line"></span>
+                  </div>
+                </div>  
+             </div>
+             <div class="row100">
+                <div class="col">
+                  <div class="inputBox">
+                     <input autocomplete="off" type="text" name="technology" required="required" placeholder="Technology">
+                     <div id="technology_error">Please enter technology</div>
+                     <span class="line"></span>
+                  </div>
+                </div>
+                <div class="col">
+                 <div class="inputBox">
+                  <input autocomplete="off" type="number" name="experience" required="required" placeholder="Experience">
+                  <div id="experience_error">Please enter your experience</div>
+                  <span class="line"></span>
+                 </div>
+                </div>  
+             </div>
+             <div class="row100">
+                 <div class="col">
+                    <div class="inputBox textarea">
+                      <input autocomplete="off" name="description" required="required" placeholder="Description"></input>
+                       <div id="description_error">Please give some description</div>
+                      <span class="line"></span>
+                    </div>
+                 </div>    
+             </div>
+             <div class="row100">
+                <div class="col">
+                 <input id="bt" type="submit" value="Submit">
+                </div>
+             </div>
+           </form>  
+         </div> 
+         <script src="trainingpage.js"></script> 
+             
+      </section>
+      <section id="footer">
+        <div>
+             <h2>More information</h2><br>
+             <h5>location</h5><br>
+             <h5>FAQ</h5><br>
+             <h5>Talent services</h5>
+
+        </div>     
+     </section> 
+ </body>
+ </html> 
